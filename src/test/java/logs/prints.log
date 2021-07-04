@@ -399,3 +399,33 @@
 16:09:06.006 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - Test: credentialsValidation finished
 16:09:06.009 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - try to close browser
 16:09:06.828 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - browser closed successfully
+18:38:57.393 [TestNG-tests-2] INFO  framework.base.automation.HelperTest - ---------------------------------------------------- New Test Suite triggered --------------------------------------------------------
+18:38:57.399 [TestNG-tests-2] INFO  framework.base.automation.HelperTest - try to initiate driver
+18:38:58.027 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - try to initiate driver
+18:38:59.838 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - driver initialized successfully
+18:38:59.838 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - navigated to environmentURL
+18:39:02.858 [TestNG-tests-2] INFO  framework.base.automation.HelperTest - driver initialized successfully
+18:39:02.954 [TestNG-tests-2] INFO  framework.base.automation.HelperTest - Test: loginToApplication started
+18:39:02.972 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - navigated to environmentURL successfully
+18:39:02.974 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - Test: credentialsValidation started
+18:39:02.974 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - fetched data from userCredentials dataProvider successfully
+18:39:09.840 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - login tested successfully with a user
+18:39:09.841 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - Test: credentialsValidation finished
+18:39:09.851 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - try to close browser
+18:39:10.059 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - browser closed successfully
+18:39:10.060 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - try to initiate driver
+18:39:10.509 [TestNG-tests-2] INFO  framework.base.automation.HelperTest - Test: loginToApplication finished
+18:39:10.566 [TestNG-tests-2] INFO  framework.base.automation.HelperTest - Test: validateUserName started
+18:39:10.689 [TestNG-tests-2] INFO  framework.base.automation.HelperTest - Test: validateUserName finished
+18:39:10.692 [TestNG-tests-2] INFO  framework.base.automation.HelperTest - Test: noRacism started
+18:39:11.392 [TestNG-tests-2] INFO  framework.base.automation.HelperTest - try to close browser
+18:39:11.508 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - driver initialized successfully
+18:39:11.508 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - navigated to environmentURL
+18:39:11.635 [TestNG-tests-2] INFO  framework.base.automation.HelperTest - browser closed successfully
+18:39:14.948 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - navigated to environmentURL successfully
+18:39:14.949 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - Test: credentialsValidation started
+18:39:14.950 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - fetched data from userCredentials dataProvider successfully
+18:39:21.607 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - login tested successfully with a user
+18:39:21.608 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - Test: credentialsValidation finished
+18:39:21.609 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - try to close browser
+18:39:22.188 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - browser closed successfully
