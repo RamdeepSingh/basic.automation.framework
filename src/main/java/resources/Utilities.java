@@ -28,6 +28,7 @@ public class Utilities {
 		FileInputStream fis = new FileInputStream(path + "\\src\\main\\java\\resources\\enviornment.properties");
 		p.load(fis);
 		String browserName = System.getProperty("browser");
+		System.out.println("browser name is: " + browserName);
 		/* p.getProperty("browser") */;
 		String driverPath = p.getProperty("driverPath");
 
