@@ -2,38 +2,38 @@
 <testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="39881" started-at="2021-07-04T15:32:54 IST" finished-at="2021-07-04T15:33:34 IST">
+  <suite name="Suite" duration-ms="30645" started-at="2021-07-04T16:08:36 IST" finished-at="2021-07-04T16:09:06 IST">
     <groups>
     </groups>
-    <test name="Home page information test" duration-ms="25768" started-at="2021-07-04T15:32:54 IST" finished-at="2021-07-04T15:33:20 IST">
+    <test name="Home page information test" duration-ms="21440" started-at="2021-07-04T16:08:36 IST" finished-at="2021-07-04T16:08:57 IST">
       <class name="framework.basic.automation.HomePageInfoTest">
-        <test-method status="PASS" signature="openApplication()[pri:0, instance:framework.basic.automation.HomePageInfoTest@5d908d47]" name="openApplication" is-config="true" duration-ms="12132" started-at="2021-07-04T15:32:54 IST" finished-at="2021-07-04T15:33:06 IST">
+        <test-method status="PASS" signature="openApplication()[pri:0, instance:framework.basic.automation.HomePageInfoTest@5d908d47]" name="openApplication" is-config="true" duration-ms="7131" started-at="2021-07-04T16:08:36 IST" finished-at="2021-07-04T16:08:43 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApplication -->
-        <test-method status="PASS" signature="loginToApplication(java.util.Map)[pri:0, instance:framework.basic.automation.HomePageInfoTest@5d908d47]" name="loginToApplication" duration-ms="11440" started-at="2021-07-04T15:33:07 IST" data-provider="userInfo" finished-at="2021-07-04T15:33:18 IST">
+        <test-method status="PASS" signature="loginToApplication(java.util.Map)[pri:0, instance:framework.basic.automation.HomePageInfoTest@5d908d47]" name="loginToApplication" duration-ms="10715" started-at="2021-07-04T16:08:43 IST" data-provider="userInfo" finished-at="2021-07-04T16:08:54 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Usertype=premium, User=Ramdeep, Username=ramdeepmansa@gmail.com, Password=Real123#}]]>
+                <![CDATA[{Usertype=premium, User=Retrix, Username=retrixsingh01@gmail.com, Password=Retrix123#}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApplication -->
-        <test-method status="PASS" signature="validateUserName(java.util.Map)[pri:0, instance:framework.basic.automation.HomePageInfoTest@5d908d47]" name="validateUserName" duration-ms="83" started-at="2021-07-04T15:33:18 IST" data-provider="userInfo" depends-on-methods="framework.basic.automation.HomePageInfoTest.loginToApplication" finished-at="2021-07-04T15:33:18 IST">
+        <test-method status="PASS" signature="validateUserName(java.util.Map)[pri:0, instance:framework.basic.automation.HomePageInfoTest@5d908d47]" name="validateUserName" duration-ms="78" started-at="2021-07-04T16:08:54 IST" data-provider="userInfo" depends-on-methods="framework.basic.automation.HomePageInfoTest.loginToApplication" finished-at="2021-07-04T16:08:54 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Usertype=premium, User=Ramdeep, Username=ramdeepmansa@gmail.com, Password=Real123#}]]>
+                <![CDATA[{Usertype=premium, User=Retrix, Username=retrixsingh01@gmail.com, Password=Retrix123#}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateUserName -->
-        <test-method status="FAIL" signature="noRacism()[pri:0, instance:framework.basic.automation.HomePageInfoTest@5d908d47]" name="noRacism" duration-ms="145" started-at="2021-07-04T15:33:18 IST" depends-on-methods="framework.basic.automation.HomePageInfoTest.validateUserName" finished-at="2021-07-04T15:33:18 IST">
+        <test-method status="FAIL" signature="noRacism()[pri:0, instance:framework.basic.automation.HomePageInfoTest@5d908d47]" name="noRacism" duration-ms="143" started-at="2021-07-04T16:08:54 IST" depends-on-methods="framework.basic.automation.HomePageInfoTest.validateUserName" finished-at="2021-07-04T16:08:54 IST">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -74,49 +74,49 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- noRacism -->
-        <test-method status="PASS" signature="killBrowser()[pri:0, instance:framework.basic.automation.HomePageInfoTest@5d908d47]" name="killBrowser" is-config="true" duration-ms="988" started-at="2021-07-04T15:33:19 IST" finished-at="2021-07-04T15:33:20 IST">
+        <test-method status="PASS" signature="killBrowser()[pri:0, instance:framework.basic.automation.HomePageInfoTest@5d908d47]" name="killBrowser" is-config="true" duration-ms="2354" started-at="2021-07-04T16:08:55 IST" finished-at="2021-07-04T16:08:57 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killBrowser -->
       </class> <!-- framework.basic.automation.HomePageInfoTest -->
     </test> <!-- Home page information test -->
-    <test name="Credential test" duration-ms="39881" started-at="2021-07-04T15:32:54 IST" finished-at="2021-07-04T15:33:34 IST">
+    <test name="Credential test" duration-ms="30645" started-at="2021-07-04T16:08:36 IST" finished-at="2021-07-04T16:09:06 IST">
       <class name="framework.basic.automation.CredentialsTest">
-        <test-method status="PASS" signature="openApplication()[pri:0, instance:framework.basic.automation.CredentialsTest@5276d6ee]" name="openApplication" is-config="true" duration-ms="11767" started-at="2021-07-04T15:32:55 IST" finished-at="2021-07-04T15:33:07 IST">
+        <test-method status="PASS" signature="openApplication()[pri:0, instance:framework.basic.automation.CredentialsTest@5276d6ee]" name="openApplication" is-config="true" duration-ms="6103" started-at="2021-07-04T16:08:36 IST" finished-at="2021-07-04T16:08:42 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApplication -->
-        <test-method status="PASS" signature="credentialsValidation(java.util.Map)[pri:0, instance:framework.basic.automation.CredentialsTest@5276d6ee]" name="credentialsValidation" duration-ms="10285" started-at="2021-07-04T15:33:07 IST" data-provider="userCredentials" finished-at="2021-07-04T15:33:17 IST">
+        <test-method status="PASS" signature="credentialsValidation(java.util.Map)[pri:0, instance:framework.basic.automation.CredentialsTest@5276d6ee]" name="credentialsValidation" duration-ms="10741" started-at="2021-07-04T16:08:42 IST" data-provider="userCredentials" finished-at="2021-07-04T16:08:53 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Usertype=premium, User=Ramdeep, Username=ramdeepmansa@gmail.com, Password=Real123#}]]>
+                <![CDATA[{Usertype=premium, User=Retrix, Username=retrixsingh01@gmail.com, Password=Retrix123#}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- credentialsValidation -->
-        <test-method status="PASS" signature="killBrowser()[pri:0, instance:framework.basic.automation.CredentialsTest@5276d6ee]" name="killBrowser" is-config="true" duration-ms="1736" started-at="2021-07-04T15:33:17 IST" finished-at="2021-07-04T15:33:19 IST">
+        <test-method status="PASS" signature="killBrowser()[pri:0, instance:framework.basic.automation.CredentialsTest@5276d6ee]" name="killBrowser" is-config="true" duration-ms="1228" started-at="2021-07-04T16:08:53 IST" finished-at="2021-07-04T16:08:54 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killBrowser -->
-        <test-method status="PASS" signature="openApplication()[pri:0, instance:framework.basic.automation.CredentialsTest@5276d6ee]" name="openApplication" is-config="true" duration-ms="6234" started-at="2021-07-04T15:33:19 IST" finished-at="2021-07-04T15:33:25 IST">
+        <test-method status="PASS" signature="openApplication()[pri:0, instance:framework.basic.automation.CredentialsTest@5276d6ee]" name="openApplication" is-config="true" duration-ms="4957" started-at="2021-07-04T16:08:54 IST" finished-at="2021-07-04T16:08:59 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApplication -->
-        <test-method status="PASS" signature="credentialsValidation(java.util.Map)[pri:0, instance:framework.basic.automation.CredentialsTest@5276d6ee]" name="credentialsValidation" duration-ms="8286" started-at="2021-07-04T15:33:25 IST" data-provider="userCredentials" finished-at="2021-07-04T15:33:33 IST">
+        <test-method status="PASS" signature="credentialsValidation(java.util.Map)[pri:0, instance:framework.basic.automation.CredentialsTest@5276d6ee]" name="credentialsValidation" duration-ms="6074" started-at="2021-07-04T16:08:59 IST" data-provider="userCredentials" finished-at="2021-07-04T16:09:06 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Usertype=economy, User=Rami, Username=manshaia2311@gmail.com, Password=Real123#}]]>
+                <![CDATA[{Usertype=economy, User=RetrixAlpha, Username=retrixsingh02@gmail.com, Password=Retrix123#}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- credentialsValidation -->
-        <test-method status="PASS" signature="killBrowser()[pri:0, instance:framework.basic.automation.CredentialsTest@5276d6ee]" name="killBrowser" is-config="true" duration-ms="844" started-at="2021-07-04T15:33:33 IST" finished-at="2021-07-04T15:33:34 IST">
+        <test-method status="PASS" signature="killBrowser()[pri:0, instance:framework.basic.automation.CredentialsTest@5276d6ee]" name="killBrowser" is-config="true" duration-ms="820" started-at="2021-07-04T16:09:06 IST" finished-at="2021-07-04T16:09:06 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killBrowser -->
