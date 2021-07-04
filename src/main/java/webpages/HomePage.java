@@ -17,11 +17,11 @@ public class HomePage {
 	}
 
 	@FindBy(xpath = "//span[@class='fantasyUsername']")
-	WebElement userInfo;
+	private WebElement userInfo;
 	@FindBy(xpath = "//a[contains(@class,'racism')]")
-	WebElement noRacismMessage;
+	private WebElement noRacismMessage;
 	@FindBy(xpath = "//span[@class='fantasyUsername']")
-	WebElement fantasyUsername;
+	private WebElement fantasyUsername;
 
 	public WebElement toGetUserInfo() {
 

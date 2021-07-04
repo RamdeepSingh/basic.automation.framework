@@ -17,11 +17,11 @@ public class LandingPage {
 	}
 
 	@FindBy(xpath = "//div[contains(@class,'cookies')]")
-	WebElement acceptCookie;
+	private WebElement acceptCookie;
 	@FindBy(xpath = "//a[@id='advertClose']")
-	WebElement closeAdvertisement;
+	private WebElement closeAdvertisement;
 	@FindBy(xpath = "//a/span[@class='fantasySignInLabel']")
-	WebElement signIn;
+	private WebElement signIn;
 
 	public WebElement toAcceptCookie() {
 

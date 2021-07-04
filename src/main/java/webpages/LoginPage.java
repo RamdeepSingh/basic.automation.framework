@@ -17,11 +17,11 @@ public class LoginPage {
 	}
 
 	@FindBy(xpath = "//input[@type='email']")
-	WebElement emailID;
+	private WebElement emailID;
 	@FindBy(xpath = "//input[@type='password']")
-	WebElement password;
+	private WebElement password;
 	@FindBy(xpath = "//button[@type='submit']")
-	WebElement signInButton;
+	private WebElement signInButton;
 
 	public WebElement toEnterEmail() {
 

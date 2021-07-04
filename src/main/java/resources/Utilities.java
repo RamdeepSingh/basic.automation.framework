@@ -26,9 +26,8 @@ public class Utilities {
 		p = new Properties();
 		FileInputStream fis = new FileInputStream(path + "\\src\\main\\java\\resources\\enviornment.properties");
 		p.load(fis);
-		String browserName = p.getProperty("browser");
+		String browserName = System.getProperty("browser"); /*p.getProperty("browser")*/;
 		String driverPath = p.getProperty("driverPath");
-		System.out.println(browserName);
 
 		if (browserName.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver", path + driverPath + "chromedriver.exe");
