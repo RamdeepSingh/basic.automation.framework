@@ -13,6 +13,17 @@ pipeline {
         }
         stage('Run Project') {
             steps {
+				script { 
+						properties([
+							parameters([
+								choice(
+									choices: ['chrome', 'firefox'], 
+									name: 'Browser Name'
+								),
+								
+							])
+						])
+					}
 				sh "mvn test -Dbrowser="$Browser Name""
             }
         }
