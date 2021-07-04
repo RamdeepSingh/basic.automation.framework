@@ -32,15 +32,15 @@ public class Utilities {
 		String driverPath = p.getProperty("driverPath");
 
 		if (browserName.equalsIgnoreCase("chrome")) {
+			System.setProperty("webdriver.chrome.driver", path + driverPath + "chromedriver.exe");
 			drive = new ChromeDriver();
 		}
 
 		else if (browserName.equalsIgnoreCase("firefox")) {
 			System.setProperty("webdriver.gecko.driver", path + driverPath + "geckodriver.exe");
 			drive = new FirefoxDriver();
-		}
-
-		else if (browserName.equalsIgnoreCase("headlesschrome")) {
+			
+		} else if (browserName.equalsIgnoreCase("headlesschrome")) {
 			System.setProperty("webdriver.chrome.driver", path + driverPath + "chromedriver.exe");
 			ChromeOptions headlessBrowser = new ChromeOptions();
 			headlessBrowser.addArguments("headless");
@@ -48,7 +48,7 @@ public class Utilities {
 		}
 
 		else {
-			System.out.println("Invalid Browser selected. Please select 'chrome' or 'firefox'.");
+			System.out.println("Invalid Browser selected. Please select 'chrome' or 'firefox' or 'headlesschrome'.");
 		}
 
 		drive.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
