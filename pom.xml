@@ -133,7 +133,7 @@
 
 								<resource>
 
-									<directory>${basedir}/reports</directory>
+									<directory>${basedir}</directory>
 
 									<filtering>true</filtering>
 
