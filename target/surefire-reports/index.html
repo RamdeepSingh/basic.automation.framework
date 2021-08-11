@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -56,7 +56,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,21 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="framework.basic.automation.HomePageInfoTest" hash-for-method="noRacism">noRacism</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -118,22 +104,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="framework.basic.automation.CredentialsTest" hash-for-method="credentialsValidation({Usertype=economy, User=RetrixAlpha, Username=retrixsingh02@gmail.com, Password=Retrix123#})">credentialsValidation({Usertype=economy, User=RetrixAlpha, Username=retrixsingh02@gmail.com, Password=Retrix123#})</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="framework.basic.automation.CredentialsTest" hash-for-method="credentialsValidation({Usertype=premium, User=Retrix, Username=retrixsingh01@gmail.com, Password=UmV0cml4MTIzIw})">credentialsValidation({Usertype=premium, User=Retrix, Username=retrixsingh01@gmail.com, Password=UmV0cml4MTIzIw})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="framework.basic.automation.CredentialsTest" hash-for-method="credentialsValidation({Usertype=premium, User=Retrix, Username=retrixsingh01@gmail.com, Password=Retrix123#})">credentialsValidation({Usertype=premium, User=Retrix, Username=retrixsingh01@gmail.com, Password=Retrix123#})</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="framework.basic.automation.HomePageInfoTest" hash-for-method="loginToApplication({Usertype=premium, User=Retrix, Username=retrixsingh01@gmail.com, Password=Retrix123#})">loginToApplication({Usertype=premium, User=Retrix, Username=retrixsingh01@gmail.com, Password=Retrix123#})</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="framework.basic.automation.HomePageInfoTest" hash-for-method="validateUserName({Usertype=premium, User=Retrix, Username=retrixsingh01@gmail.com, Password=Retrix123#})">validateUserName({Usertype=premium, User=Retrix, Username=retrixsingh01@gmail.com, Password=Retrix123#})</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="framework.basic.automation.CredentialsTest" hash-for-method="credentialsValidation({Usertype=economy, User=RetrixAlpha, Username=retrixsingh02@gmail.com, Password=UmV0cml4MTIzIw})">credentialsValidation({Usertype=economy, User=RetrixAlpha, Username=retrixsingh02@gmail.com, Password=UmV0cml4MTIzIw})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -148,30 +124,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">framework.basic.automation.HomePageInfoTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="noRacism">
-                  </a> <!-- noRacism -->
-                  <span class="method-name">noRacism</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at framework.basic.automation.HomePageInfoTest.noRacism(HomePageInfoTest.java:69)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-... Removed 22 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -180,42 +132,18 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="credentialsValidation({Usertype=economy, User=RetrixAlpha, Username=retrixsingh02@gmail.com, Password=Retrix123#})">
-                  </a> <!-- credentialsValidation({Usertype=economy, User=RetrixAlpha, Username=retrixsingh02@gmail.com, Password=Retrix123#}) -->
+                  <a name="credentialsValidation({Usertype=premium, User=Retrix, Username=retrixsingh01@gmail.com, Password=UmV0cml4MTIzIw})">
+                  </a> <!-- credentialsValidation({Usertype=premium, User=Retrix, Username=retrixsingh01@gmail.com, Password=UmV0cml4MTIzIw}) -->
                   <span class="method-name">credentialsValidation</span>
-                  <span class="parameters">({Usertype=economy, User=RetrixAlpha, Username=retrixsingh02@gmail.com, Password=Retrix123#})</span>
+                  <span class="parameters">({Usertype=premium, User=Retrix, Username=retrixsingh01@gmail.com, Password=UmV0cml4MTIzIw})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="credentialsValidation({Usertype=premium, User=Retrix, Username=retrixsingh01@gmail.com, Password=Retrix123#})">
-                  </a> <!-- credentialsValidation({Usertype=premium, User=Retrix, Username=retrixsingh01@gmail.com, Password=Retrix123#}) -->
+                  <a name="credentialsValidation({Usertype=economy, User=RetrixAlpha, Username=retrixsingh02@gmail.com, Password=UmV0cml4MTIzIw})">
+                  </a> <!-- credentialsValidation({Usertype=economy, User=RetrixAlpha, Username=retrixsingh02@gmail.com, Password=UmV0cml4MTIzIw}) -->
                   <span class="method-name">credentialsValidation</span>
-                  <span class="parameters">({Usertype=premium, User=Retrix, Username=retrixsingh01@gmail.com, Password=Retrix123#})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">framework.basic.automation.HomePageInfoTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginToApplication({Usertype=premium, User=Retrix, Username=retrixsingh01@gmail.com, Password=Retrix123#})">
-                  </a> <!-- loginToApplication({Usertype=premium, User=Retrix, Username=retrixsingh01@gmail.com, Password=Retrix123#}) -->
-                  <span class="method-name">loginToApplication</span>
-                  <span class="parameters">({Usertype=premium, User=Retrix, Username=retrixsingh01@gmail.com, Password=Retrix123#})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="validateUserName({Usertype=premium, User=Retrix, Username=retrixsingh01@gmail.com, Password=Retrix123#})">
-                  </a> <!-- validateUserName({Usertype=premium, User=Retrix, Username=retrixsingh01@gmail.com, Password=Retrix123#}) -->
-                  <span class="method-name">validateUserName</span>
-                  <span class="parameters">({Usertype=premium, User=Retrix, Username=retrixsingh01@gmail.com, Password=Retrix123#})</span>
+                  <span class="parameters">({Usertype=economy, User=RetrixAlpha, Username=retrixsingh02@gmail.com, Password=UmV0cml4MTIzIw})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -238,11 +166,6 @@
       &lt;class name=&quot;framework.basic.automation.CredentialsTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Credential test --&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Home page information test&quot; parallel=&quot;tests&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;framework.basic.automation.HomePageInfoTest&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Home page information test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -255,9 +178,6 @@
             <ul>
               <li>
                 <span class="test-name">Credential test (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">Home page information test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -283,32 +203,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginToApplication')
-data.setCell(0, 2, 'framework.basic.automation.HomePageInfoTest')
-data.setCell(0, 3, 7572);
+data.setCell(0, 1, 'credentialsValidation')
+data.setCell(0, 2, 'framework.basic.automation.CredentialsTest')
+data.setCell(0, 3, 6485);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'credentialsValidation')
 data.setCell(1, 2, 'framework.basic.automation.CredentialsTest')
-data.setCell(1, 3, 6868);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'credentialsValidation')
-data.setCell(2, 2, 'framework.basic.automation.CredentialsTest')
-data.setCell(2, 3, 6659);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'validateUserName')
-data.setCell(3, 2, 'framework.basic.automation.HomePageInfoTest')
-data.setCell(3, 3, 124);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'noRacism')
-data.setCell(4, 2, 'framework.basic.automation.HomePageInfoTest')
-data.setCell(4, 3, 106);
+data.setCell(1, 3, 6384);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 24 seconds</span>
+              <span class="suite-total-time">Total running time: 27 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -334,67 +242,30 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">framework.basic.automation.HomePageInfoTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">openApplication</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
               <div class="chronological-class-name">framework.basic.automation.CredentialsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">openApplication</span>
-                <span class="method-start">648 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">framework.basic.automation.HomePageInfoTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">loginToApplication({Usertype=premium, User=Retrix, Username=retrixsingh01@gmail.com, Password=Retrix123#})</span>
-                <span class="method-start">5558 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">framework.basic.automation.CredentialsTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">credentialsValidation({Usertype=premium, User=Retrix, Username=retrixsingh01@gmail.com, Password=Retrix123#})</span>
-                <span class="method-start">5594 ms</span>
+                <span class="method-name">credentialsValidation({Usertype=premium, User=Retrix, Username=retrixsingh01@gmail.com, Password=UmV0cml4MTIzIw})</span>
+                <span class="method-start">6921 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">killBrowser</span>
-                <span class="method-start">12472 ms</span>
+                <span class="method-start">13319 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">openApplication</span>
-                <span class="method-start">12681 ms</span>
+                <span class="method-start">14125 ms</span>
               </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">framework.basic.automation.HomePageInfoTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">validateUserName({Usertype=premium, User=Retrix, Username=retrixsingh01@gmail.com, Password=Retrix123#})</span>
-                <span class="method-start">13186 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">noRacism</span>
-                <span class="method-start">13312 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">killBrowser</span>
-                <span class="method-start">14012 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">framework.basic.automation.CredentialsTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">credentialsValidation({Usertype=economy, User=RetrixAlpha, Username=retrixsingh02@gmail.com, Password=Retrix123#})</span>
-                <span class="method-start">17570 ms</span>
+                <span class="method-name">credentialsValidation({Usertype=economy, User=RetrixAlpha, Username=retrixsingh02@gmail.com, Password=UmV0cml4MTIzIw})</span>
+                <span class="method-start">19844 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">killBrowser</span>
-                <span class="method-start">24230 ms</span>
+                <span class="method-start">26332 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

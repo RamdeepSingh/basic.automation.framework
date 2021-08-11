@@ -4,17 +4,15 @@
   <listeners>
     <listener class-name="framework.basic.automation.Listeners"/>
   </listeners>
-  <test thread-count="5" name="Home page information test(failed)" parallel="tests">
+  <test thread-count="5" name="Credential test(failed)" parallel="tests">
     <classes>
-      <class name="framework.basic.automation.HomePageInfoTest">
+      <class name="framework.basic.automation.CredentialsTest">
         <methods>
-          <include name="validateUserName"/>
+          <include name="credentialsValidation"/>
           <include name="openApplication"/>
-          <include name="loginToApplication"/>
-          <include name="noRacism"/>
           <include name="killBrowser"/>
         </methods>
-      </class> <!-- framework.basic.automation.HomePageInfoTest -->
+      </class> <!-- framework.basic.automation.CredentialsTest -->
     </classes>
-  </test> <!-- Home page information test(failed) -->
+  </test> <!-- Credential test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

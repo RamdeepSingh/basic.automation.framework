@@ -1,56 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
+<testng-results skipped="2" failed="0" ignored="0" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="30645" started-at="2021-07-04T16:08:36 IST" finished-at="2021-07-04T16:09:06 IST">
+  <suite name="Suite" duration-ms="762" started-at="2021-07-05T15:16:36 IST" finished-at="2021-07-05T15:16:37 IST">
     <groups>
     </groups>
-    <test name="Home page information test" duration-ms="21440" started-at="2021-07-04T16:08:36 IST" finished-at="2021-07-04T16:08:57 IST">
-      <class name="framework.basic.automation.HomePageInfoTest">
-        <test-method status="PASS" signature="openApplication()[pri:0, instance:framework.basic.automation.HomePageInfoTest@5d908d47]" name="openApplication" is-config="true" duration-ms="7131" started-at="2021-07-04T16:08:36 IST" finished-at="2021-07-04T16:08:43 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApplication -->
-        <test-method status="PASS" signature="loginToApplication(java.util.Map)[pri:0, instance:framework.basic.automation.HomePageInfoTest@5d908d47]" name="loginToApplication" duration-ms="10715" started-at="2021-07-04T16:08:43 IST" data-provider="userInfo" finished-at="2021-07-04T16:08:54 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Usertype=premium, User=Retrix, Username=retrixsingh01@gmail.com, Password=Retrix123#}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToApplication -->
-        <test-method status="PASS" signature="validateUserName(java.util.Map)[pri:0, instance:framework.basic.automation.HomePageInfoTest@5d908d47]" name="validateUserName" duration-ms="78" started-at="2021-07-04T16:08:54 IST" data-provider="userInfo" depends-on-methods="framework.basic.automation.HomePageInfoTest.loginToApplication" finished-at="2021-07-04T16:08:54 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Usertype=premium, User=Retrix, Username=retrixsingh01@gmail.com, Password=Retrix123#}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateUserName -->
-        <test-method status="FAIL" signature="noRacism()[pri:0, instance:framework.basic.automation.HomePageInfoTest@5d908d47]" name="noRacism" duration-ms="143" started-at="2021-07-04T16:08:54 IST" depends-on-methods="framework.basic.automation.HomePageInfoTest.validateUserName" finished-at="2021-07-04T16:08:54 IST">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
+    <test name="Credential test" duration-ms="762" started-at="2021-07-05T15:16:36 IST" finished-at="2021-07-05T15:16:37 IST">
+      <class name="framework.basic.automation.CredentialsTest">
+        <test-method status="FAIL" signature="openApplication()[pri:0, instance:framework.basic.automation.CredentialsTest@5276d6ee]" name="openApplication" is-config="true" duration-ms="16" started-at="2021-07-05T15:16:37 IST" finished-at="2021-07-05T15:16:37 IST">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertTrue(Assert.java:45)
-at org.testng.Assert.assertTrue(Assert.java:55)
-at framework.basic.automation.HomePageInfoTest.noRacism(HomePageInfoTest.java:70)
+              <![CDATA[java.lang.NullPointerException
+at resources.Utilities.initializeDriver(Utilities.java:36)
+at framework.basic.automation.CredentialsTest.openApplication(CredentialsTest.java:31)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.lang.reflect.Method.invoke(Method.java:498)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
 at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
@@ -70,53 +42,111 @@ at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:62
 at java.lang.Thread.run(Thread.java:748)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- noRacism -->
-        <test-method status="PASS" signature="killBrowser()[pri:0, instance:framework.basic.automation.HomePageInfoTest@5d908d47]" name="killBrowser" is-config="true" duration-ms="2354" started-at="2021-07-04T16:08:55 IST" finished-at="2021-07-04T16:08:57 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- killBrowser -->
-      </class> <!-- framework.basic.automation.HomePageInfoTest -->
-    </test> <!-- Home page information test -->
-    <test name="Credential test" duration-ms="30645" started-at="2021-07-04T16:08:36 IST" finished-at="2021-07-04T16:09:06 IST">
-      <class name="framework.basic.automation.CredentialsTest">
-        <test-method status="PASS" signature="openApplication()[pri:0, instance:framework.basic.automation.CredentialsTest@5276d6ee]" name="openApplication" is-config="true" duration-ms="6103" started-at="2021-07-04T16:08:36 IST" finished-at="2021-07-04T16:08:42 IST">
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApplication -->
-        <test-method status="PASS" signature="credentialsValidation(java.util.Map)[pri:0, instance:framework.basic.automation.CredentialsTest@5276d6ee]" name="credentialsValidation" duration-ms="10741" started-at="2021-07-04T16:08:42 IST" data-provider="userCredentials" finished-at="2021-07-04T16:08:53 IST">
+        <test-method status="SKIP" signature="credentialsValidation(java.util.Map)[pri:0, instance:framework.basic.automation.CredentialsTest@5276d6ee]" name="credentialsValidation" duration-ms="0" started-at="2021-07-05T15:16:37 IST" data-provider="userCredentials" finished-at="2021-07-05T15:16:37 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Usertype=premium, User=Retrix, Username=retrixsingh01@gmail.com, Password=Retrix123#}]]>
+                <![CDATA[{Usertype=premium, User=Retrix, Username=retrixsingh01@gmail.com, Password=UmV0cml4MTIzIw}]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at resources.Utilities.initializeDriver(Utilities.java:36)
+at framework.basic.automation.CredentialsTest.openApplication(CredentialsTest.java:31)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- credentialsValidation -->
-        <test-method status="PASS" signature="killBrowser()[pri:0, instance:framework.basic.automation.CredentialsTest@5276d6ee]" name="killBrowser" is-config="true" duration-ms="1228" started-at="2021-07-04T16:08:53 IST" finished-at="2021-07-04T16:08:54 IST">
+        <test-method status="SKIP" signature="killBrowser()[pri:0, instance:framework.basic.automation.CredentialsTest@5276d6ee]" name="killBrowser" is-config="true" duration-ms="-1625478397658" started-at="2021-07-05T15:16:37 IST" finished-at="1970-01-01T05:30:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killBrowser -->
-        <test-method status="PASS" signature="openApplication()[pri:0, instance:framework.basic.automation.CredentialsTest@5276d6ee]" name="openApplication" is-config="true" duration-ms="4957" started-at="2021-07-04T16:08:54 IST" finished-at="2021-07-04T16:08:59 IST">
+        <test-method status="SKIP" signature="openApplication()[pri:0, instance:framework.basic.automation.CredentialsTest@5276d6ee]" name="openApplication" is-config="true" duration-ms="-1625478397659" started-at="2021-07-05T15:16:37 IST" finished-at="1970-01-01T05:30:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApplication -->
-        <test-method status="PASS" signature="credentialsValidation(java.util.Map)[pri:0, instance:framework.basic.automation.CredentialsTest@5276d6ee]" name="credentialsValidation" duration-ms="6074" started-at="2021-07-04T16:08:59 IST" data-provider="userCredentials" finished-at="2021-07-04T16:09:06 IST">
+        <test-method status="SKIP" signature="credentialsValidation(java.util.Map)[pri:0, instance:framework.basic.automation.CredentialsTest@5276d6ee]" name="credentialsValidation" duration-ms="0" started-at="2021-07-05T15:16:37 IST" data-provider="userCredentials" finished-at="2021-07-05T15:16:37 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Usertype=economy, User=RetrixAlpha, Username=retrixsingh02@gmail.com, Password=Retrix123#}]]>
+                <![CDATA[{Usertype=economy, User=RetrixAlpha, Username=retrixsingh02@gmail.com, Password=UmV0cml4MTIzIw}]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at resources.Utilities.initializeDriver(Utilities.java:36)
+at framework.basic.automation.CredentialsTest.openApplication(CredentialsTest.java:31)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- credentialsValidation -->
-        <test-method status="PASS" signature="killBrowser()[pri:0, instance:framework.basic.automation.CredentialsTest@5276d6ee]" name="killBrowser" is-config="true" duration-ms="820" started-at="2021-07-04T16:09:06 IST" finished-at="2021-07-04T16:09:06 IST">
+        <test-method status="SKIP" signature="killBrowser()[pri:0, instance:framework.basic.automation.CredentialsTest@5276d6ee]" name="killBrowser" is-config="true" duration-ms="-1625478397662" started-at="2021-07-05T15:16:37 IST" finished-at="1970-01-01T05:30:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killBrowser -->

@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -13,11 +14,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Utilities {
 
-	public WebDriver drive;
+	public WebDriver driver;
 	public WebDriverWait wait;
 	public Properties p;
 
@@ -34,29 +36,29 @@ public class Utilities {
 
 		if (browserName.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver", path + driverPath + "chromedriver.exe");
-			drive = new ChromeDriver();
+			driver = new ChromeDriver();
 		}
 
 		else if (browserName.equalsIgnoreCase("firefox")) {
 			System.setProperty("webdriver.gecko.driver", path + driverPath + "geckodriver.exe");
-			drive = new FirefoxDriver();
-			
+			driver = new FirefoxDriver();
+
 		} else if (browserName.equalsIgnoreCase("headlesschrome")) {
 			System.setProperty("webdriver.chrome.driver", path + driverPath + "chromedriver.exe");
 			ChromeOptions headlessBrowser = new ChromeOptions();
 			headlessBrowser.addArguments("headless");
-			drive = new ChromeDriver(headlessBrowser);
+			driver = new ChromeDriver(headlessBrowser);
 		}
 
 		else {
 			System.out.println("Invalid Browser selected. Please select 'chrome' or 'firefox' or 'headlesschrome'.");
 		}
 
-		drive.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		wait = new WebDriverWait(drive, 15);
-		drive.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		wait = new WebDriverWait(driver, 15);
+		driver.manage().window().maximize();
 
-		return drive;
+		return driver;
 	}
 
 	public String takeScreenshot(String testCaseName, WebDriver driver) throws IOException {
@@ -69,4 +71,24 @@ public class Utilities {
 		return screenshotPath;
 	}
 
+	public String decoder(String password) {
+
+		byte[] decodedString = Base64.decodeBase64(password);
+		return new String(decodedString);
+
+	}
+	
+	
+	public void clickOnElement(String xpath) {
+		
+		
+	}
+
+	public void sendKeysToElement(String xpath, String keys) {
+		
+		
+	}
+	
+	
+	
 }

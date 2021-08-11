@@ -33,8 +33,9 @@ public class HomePageInfoTest extends HelperTest {
 
 		log.info("Test: loginToApplication started");
 		String username = map.get("Username");
-		String password = map.get("Password");
-
+		String encodedPassword = map.get("Password");
+		String password = decoder(encodedPassword);
+		
 		landingPage = new LandingPage(driver);
 		landingPage.toAcceptCookie().click();
 		landingPage.toCloseAdvertisement();

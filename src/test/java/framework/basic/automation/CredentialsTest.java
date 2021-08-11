@@ -50,7 +50,9 @@ public class CredentialsTest extends HelperTest {
 
 		log.info("Test: credentialsValidation started");
 		String username = map.get("Username");
-		String password = map.get("Password");
+		String encodedPassword = map.get("Password");
+		String password = decoder(encodedPassword);
+		
 		log.info("fetched data from userCredentials dataProvider successfully");
 
 		landingPage = new LandingPage(driver);

@@ -18,7 +18,7 @@ public class HelperTest extends Utilities {
 	@BeforeTest
 	public void openApplication() throws IOException {
 
-		log.info("---------------------------------------------------- New Test Suite triggered --------------------------------------------------------");
+		log.info("---------------------------------------------------- New Test Set triggered --------------------------------------------------------");
 		log.info("try to initiate driver");
 		driver = initializeDriver();
 		driver.get(p.getProperty("environmentURL"));
