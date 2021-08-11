@@ -17,6 +17,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
+		<testngFile>${testngFile}</testngFile>
 	</properties>
 
 	<dependencies>
@@ -98,10 +99,54 @@
 				<version>3.0.0-M5</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>testng.xml</suiteXmlFile>
-						<suiteXmlFile>${basedir}/target/surefire-reports/testng-failed.xml</suiteXmlFile>
+						<suiteXmlFile>${testngFile}</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
+			</plugin>
+			<plugin>
+
+				<artifactId>maven-resources-plugin</artifactId>
+
+				<version>3.0.1</version>
+
+				<executions>
+
+					<execution>
+
+						<id>copy-resources</id>
+
+						<!-- here the phase you need -->
+
+						<phase>validate</phase>
+
+						<goals>
+
+							<goal>copy-resources</goal>
+
+						</goals>
+
+						<configuration>
+
+							<outputDirectory>${basedir}/target/surefire-reports/testng-failed.xml</outputDirectory>
+
+							<resources>
+
+								<resource>
+
+									<directory>${basedir}/reports</directory>
+
+									<filtering>true</filtering>
+
+								</resource>
+
+							</resources>
+
+						</configuration>
+
+					</execution>
+
+				</executions>
+
 			</plugin>
 		</plugins>
 	</build>
