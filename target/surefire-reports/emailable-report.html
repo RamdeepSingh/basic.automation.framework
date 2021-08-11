@@ -9,11 +9,37 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Credential test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">27,812</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Home page information test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">24,318</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Credential test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">38,021</td><td></td><td></td></tr>
+<tr><th colspan="8">Failed suite [Suite]</th></tr>
+<tr><td><a href="#t2">Home page information test(failed)</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">14,236</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">6</th><th class="num">0</th><th class="num">0</th><th class="num attn">2</th><th class="num">76,575</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Credential test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">framework.basic.automation.CredentialsTest</td><td><a href="#m0">credentialsValidation</a></td><td rowspan="2">1625478459636</td><td rowspan="2">6384</td></tr><tr class="passedeven"><td><a href="#m1">credentialsValidation</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Home page information test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">framework.basic.automation.HomePageInfoTest</td><td><a href="#m0">noRacism</a></td><td rowspan="1">1628676610574</td><td rowspan="1">190</td></tr><tr><th colspan="4">Home page information test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">framework.basic.automation.HomePageInfoTest</td><td><a href="#m1">loginToApplication</a></td><td rowspan="1">1628676598295</td><td rowspan="1">12074</td></tr><tr class="passedeven"><td><a href="#m2">validateUserName</a></td><td rowspan="1">1628676610463</td><td rowspan="1">109</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Credential test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">framework.basic.automation.CredentialsTest</td><td><a href="#m3">credentialsValidation</a></td><td rowspan="2">1628676597986</td><td rowspan="2">11599</td></tr><tr class="passedeven"><td><a href="#m4">credentialsValidation</a></td></tr></tbody>
+<tbody><tr><th colspan="4">Failed suite [Suite]</th></tr></tbody><tbody id="t2"><tr><th colspan="4">Home page information test(failed) &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">framework.basic.automation.HomePageInfoTest</td><td><a href="#m5">noRacism</a></td><td rowspan="1">1628676639307</td><td rowspan="1">129</td></tr><tr><th colspan="4">Home page information test(failed) &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">framework.basic.automation.HomePageInfoTest</td><td><a href="#m6">loginToApplication</a></td><td rowspan="1">1628676631939</td><td rowspan="1">7235</td></tr><tr class="passedeven"><td><a href="#m7">validateUserName</a></td><td rowspan="1">1628676639237</td><td rowspan="1">68</td></tr></tbody>
 </table>
-<h2>Credential test</h2><h3 id="m0">framework.basic.automation.CredentialsTest#credentialsValidation</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Usertype=premium, User=Retrix, Username=retrixsingh01@gmail.com, Password=UmV0cml4MTIzIw}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">framework.basic.automation.CredentialsTest#credentialsValidation</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Usertype=economy, User=RetrixAlpha, Username=retrixsingh02@gmail.com, Password=UmV0cml4MTIzIw}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Home page information test</h2><h3 id="m0">framework.basic.automation.HomePageInfoTest#noRacism</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at framework.basic.automation.HomePageInfoTest.noRacism(HomePageInfoTest.java:71)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">framework.basic.automation.HomePageInfoTest#loginToApplication</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Usertype=premium, User=Retrix, Username=retrixsingh01@gmail.com, Password=UmV0cml4MTIzIw}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">framework.basic.automation.HomePageInfoTest#validateUserName</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Usertype=premium, User=Retrix, Username=retrixsingh01@gmail.com, Password=UmV0cml4MTIzIw}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Credential test</h2><h3 id="m3">framework.basic.automation.CredentialsTest#credentialsValidation</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Usertype=premium, User=Retrix, Username=retrixsingh01@gmail.com, Password=UmV0cml4MTIzIw}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">framework.basic.automation.CredentialsTest#credentialsValidation</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Usertype=economy, User=RetrixAlpha, Username=retrixsingh02@gmail.com, Password=UmV0cml4MTIzIw}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Home page information test(failed)</h2><h3 id="m5">framework.basic.automation.HomePageInfoTest#noRacism</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at framework.basic.automation.HomePageInfoTest.noRacism(HomePageInfoTest.java:71)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">framework.basic.automation.HomePageInfoTest#loginToApplication</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Usertype=premium, User=Retrix, Username=retrixsingh01@gmail.com, Password=UmV0cml4MTIzIw}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">framework.basic.automation.HomePageInfoTest#validateUserName</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Usertype=premium, User=Retrix, Username=retrixsingh01@gmail.com, Password=UmV0cml4MTIzIw}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

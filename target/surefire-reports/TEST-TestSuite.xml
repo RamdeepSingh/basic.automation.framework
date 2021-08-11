@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="29.71" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="54.124" tests="8" errors="0" skipped="0" failures="2">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -19,7 +19,7 @@
     <property name="user.country" value="IN"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_261\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\ramdsing\AppData\Local\Temp\surefire6571491724974153654\surefirebooter7576571896934650062.jar C:\Users\ramdsing\AppData\Local\Temp\surefire6571491724974153654 2021-07-05T15-17-29_766-jvmRun1 surefire6930492702064362176tmp surefire_03977932610083931643tmp"/>
+    <property name="sun.java.command" value="C:\Users\ramdsing\AppData\Local\Temp\surefire7846088133197285413\surefirebooter4701371775337985113.jar C:\Users\ramdsing\AppData\Local\Temp\surefire7846088133197285413 2021-08-11T15-39-45_707-jvmRun1 surefire2957816749831254167tmp surefire_05221065779087850080tmp"/>
     <property name="surefire.test.class.path" value="C:\Users\ramdsing\eclipse-workspace\basic.automation\target\test-classes;C:\Users\ramdsing\eclipse-workspace\basic.automation\target\classes;C:\Users\ramdsing\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\ramdsing\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\ramdsing\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\ramdsing\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\ramdsing\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\ramdsing\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\ramdsing\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\ramdsing\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\ramdsing\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\ramdsing\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\ramdsing\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\ramdsing\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\ramdsing\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\ramdsing\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\ramdsing\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\ramdsing\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\ramdsing\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\ramdsing\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\ramdsing\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\ramdsing\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\ramdsing\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\ramdsing\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\ramdsing\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\ramdsing\.m2\repository\org\apache\poi\poi\4.1.2\poi-4.1.2.jar;C:\Users\ramdsing\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\ramdsing\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\ramdsing\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\ramdsing\.m2\repository\org\apache\poi\poi-ooxml\4.1.2\poi-ooxml-4.1.2.jar;C:\Users\ramdsing\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.2\poi-ooxml-schemas-4.1.2.jar;C:\Users\ramdsing\.m2\repository\org\apache\xmlbeans\xmlbeans\3.1.0\xmlbeans-3.1.0.jar;C:\Users\ramdsing\.m2\repository\org\apache\commons\commons-compress\1.19\commons-compress-1.19.jar;C:\Users\ramdsing\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;C:\Users\ramdsing\.m2\repository\org\apache\logging\log4j\log4j-core\2.13.3\log4j-core-2.13.3.jar;C:\Users\ramdsing\.m2\repository\org\apache\logging\log4j\log4j-api\2.14.1\log4j-api-2.14.1.jar;C:\Users\ramdsing\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\ramdsing\.m2\repository\com\aventstack\extentreports\5.0.1\extentreports-5.0.1.jar;C:\Users\ramdsing\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\ramdsing\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\ramdsing\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\ramdsing\.m2\repository\org\projectlombok\lombok\1.18.12\lombok-1.18.12.jar;C:\Users\ramdsing\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\ramdsing\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\ramdsing"/>
@@ -32,7 +32,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\ramdsing\AppData\Local\Temp\surefire6571491724974153654\surefirebooter7576571896934650062.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\ramdsing\AppData\Local\Temp\surefire7846088133197285413\surefirebooter4701371775337985113.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_261\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_261\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -54,7 +54,7 @@
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="sun.os.patch.level" value=""/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_261\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\ramdsing\personal\Personal\softwares\apache-maven\apache-maven-3.6.3\bin;C:\Program Files\Java\jdk1.8.0_261\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\ramdsing\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_261\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\ramdsing\personal\Personal\softwares\apache-maven\apache-maven-3.6.3\bin;C:\Program Files\Java\jdk1.8.0_261\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\ramdsing\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\ramdsing\AppData\Local\Programs\Python\Python39\;C:\Users\ramdsing\AppData\Local\Programs\Python\Launcher\;C:\Users\ramdsing\AppData\Local\Microsoft\WindowsApps;;."/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="java.vm.version" value="25.261-b12"/>
@@ -62,44 +62,109 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="credentialsValidation[{Usertype=premium, User=Retrix, Username=retrixsingh01@gmail.com, Password=UmV0cml4MTIzIw}](1)" classname="framework.basic.automation.CredentialsTest" time="6.356">
-    <system-out><![CDATA[15:17:32.720 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - try to initiate driver
+  <testcase name="credentialsValidation[{Usertype=premium, User=Retrix, Username=retrixsingh01@gmail.com, Password=UmV0cml4MTIzIw}](1)" classname="framework.basic.automation.CredentialsTest" time="10.005">
+    <system-out><![CDATA[[TestNG] [WARN] Ignoring duplicate listener : framework.basic.automation.Listeners
+15:39:48.348 [TestNG-tests-2] INFO  framework.base.automation.HelperTest - ---------------------------------------------------- New Test Set triggered --------------------------------------------------------
+15:39:48.355 [TestNG-tests-2] INFO  framework.base.automation.HelperTest - try to initiate driver
 browser name is: chrome
-15:17:35.815 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - driver initialized successfully
-15:17:35.815 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - navigated to environmentURL
-15:17:39.634 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - navigated to environmentURL successfully
-15:17:39.648 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - Test: credentialsValidation started
-15:17:39.656 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - fetched data from userCredentials dataProvider successfully
-15:17:46.019 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - login tested successfully with a user
-15:17:46.019 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - Test: credentialsValidation finished
+15:39:49.014 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - try to initiate driver
+browser name is: chrome
+15:39:52.046 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - driver initialized successfully
+15:39:52.046 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - navigated to environmentURL
+15:39:57.982 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - navigated to environmentURL successfully
+15:39:58.011 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - Test: credentialsValidation started
+15:39:58.047 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - fetched data from userCredentials dataProvider successfully
+15:39:58.144 [TestNG-tests-2] INFO  framework.base.automation.HelperTest - driver initialized successfully
+15:39:58.295 [TestNG-tests-2] INFO  framework.base.automation.HelperTest - Test: loginToApplication started
+15:40:09.583 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - login tested successfully with a user
+15:40:09.584 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - Test: credentialsValidation finished
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 36993
+    <system-err><![CDATA[Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 40464
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jul 05, 2021 3:17:35 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 18419
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1628676591.059][WARNING]: This version of ChromeDriver has not been tested with Chrome version 92.
+[1628676591.111][WARNING]: This version of ChromeDriver has not been tested with Chrome version 92.
+Aug 11, 2021 3:39:51 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Aug 11, 2021 3:39:51 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="credentialsValidation[{Usertype=economy, User=RetrixAlpha, Username=retrixsingh02@gmail.com, Password=UmV0cml4MTIzIw}](2)" classname="framework.basic.automation.CredentialsTest" time="6.361">
-    <system-out><![CDATA[15:17:46.035 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - try to close browser
-15:17:46.840 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - browser closed successfully
-15:17:46.841 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - try to initiate driver
-browser name is: chrome
-15:17:48.827 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - driver initialized successfully
-15:17:48.843 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - navigated to environmentURL
-15:17:52.558 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - navigated to environmentURL successfully
-15:17:52.560 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - Test: credentialsValidation started
-15:17:52.560 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - fetched data from userCredentials dataProvider successfully
-15:17:59.041 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - login tested successfully with a user
-15:17:59.041 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - Test: credentialsValidation finished
+  <testcase name="credentialsValidation[{Usertype=economy, User=RetrixAlpha, Username=retrixsingh02@gmail.com, Password=UmV0cml4MTIzIw}](2)" classname="framework.basic.automation.CredentialsTest" time="8.016">
+    <system-out><![CDATA[15:40:11.669 [TestNG-tests-2] INFO  framework.base.automation.HelperTest - try to close browser
+15:40:12.649 [TestNG-tests-2] INFO  framework.base.automation.HelperTest - browser closed successfully
+15:40:14.678 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - driver initialized successfully
+15:40:14.678 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - navigated to environmentURL
+15:40:17.646 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - navigated to environmentURL successfully
+15:40:17.647 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - Test: credentialsValidation started
+15:40:17.647 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - fetched data from userCredentials dataProvider successfully
+15:40:25.792 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - login tested successfully with a user
+15:40:25.793 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - Test: credentialsValidation finished
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 16285
+    <system-err><![CDATA[[1628676613.546][WARNING]: This version of ChromeDriver has not been tested with Chrome version 92.
+Aug 11, 2021 3:40:14 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="loginToApplication[{Usertype=premium, User=Retrix, Username=retrixsingh01@gmail.com, Password=UmV0cml4MTIzIw}](1)" classname="framework.basic.automation.HomePageInfoTest" time="10.719">
+    <system-out><![CDATA[15:40:09.606 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - try to close browser
+15:40:10.368 [TestNG-tests-2] INFO  framework.base.automation.HelperTest - Test: loginToApplication finished
+]]></system-out>
+  </testcase>
+  <testcase name="loginToApplication[{Usertype=premium, User=Retrix, Username=retrixsingh01@gmail.com, Password=UmV0cml4MTIzIw}](1)" classname="framework.basic.automation.HomePageInfoTest" time="6.995">
+    <system-out><![CDATA[15:40:25.794 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - try to close browser
+15:40:26.352 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - browser closed successfully
+15:40:26.416 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - ---------------------------------------------------- New Test Set triggered --------------------------------------------------------
+15:40:26.417 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - try to initiate driver
+browser name is: chrome
+15:40:31.831 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - driver initialized successfully
+15:40:31.940 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - Test: loginToApplication started
+15:40:39.174 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - Test: loginToApplication finished
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 13387
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jul 05, 2021 3:17:48 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1628676627.909][WARNING]: This version of ChromeDriver has not been tested with Chrome version 92.
+Aug 11, 2021 3:40:28 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
+  </testcase>
+  <testcase name="validateUserName[{Usertype=premium, User=Retrix, Username=retrixsingh01@gmail.com, Password=UmV0cml4MTIzIw}](1)" classname="framework.basic.automation.HomePageInfoTest" time="0.142">
+    <system-out><![CDATA[15:40:10.463 [TestNG-tests-2] INFO  framework.base.automation.HelperTest - Test: validateUserName started
+15:40:10.572 [TestNG-tests-2] INFO  framework.base.automation.HelperTest - Test: validateUserName finished
+]]></system-out>
+  </testcase>
+  <testcase name="validateUserName[{Usertype=premium, User=Retrix, Username=retrixsingh01@gmail.com, Password=UmV0cml4MTIzIw}](1)" classname="framework.basic.automation.HomePageInfoTest" time="0.099">
+    <system-out><![CDATA[15:40:39.238 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - Test: validateUserName started
+15:40:39.305 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - Test: validateUserName finished
+]]></system-out>
+  </testcase>
+  <testcase name="noRacism" classname="framework.basic.automation.HomePageInfoTest" time="1.293">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at framework.basic.automation.HomePageInfoTest.noRacism(HomePageInfoTest.java:71)
+]]></failure>
+    <system-out><![CDATA[15:40:10.575 [TestNG-tests-2] INFO  framework.base.automation.HelperTest - Test: noRacism started
+15:40:11.161 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - browser closed successfully
+15:40:11.163 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - try to initiate driver
+browser name is: chrome
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 14802
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="noRacism" classname="framework.basic.automation.HomePageInfoTest" time="0.735">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at framework.basic.automation.HomePageInfoTest.noRacism(HomePageInfoTest.java:71)
+]]></failure>
+    <system-out><![CDATA[15:40:39.307 [TestNG-tests-1] INFO  framework.base.automation.HelperTest - Test: noRacism started
+]]></system-out>
   </testcase>
 </testsuite>
