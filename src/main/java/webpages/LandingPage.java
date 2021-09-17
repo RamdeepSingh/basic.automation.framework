@@ -1,47 +1,42 @@
 package webpages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LandingPage {
+public class LandingPage extends Pages {
 
 	WebDriver driver;
 
 	public LandingPage(WebDriver driver) {
 
+		super(driver);
 		this.driver = driver;
-		PageFactory.initElements(driver, this);
-
 	}
 
-	@FindBy(xpath = "//div[contains(@class,'cookies')]")
-	private WebElement acceptCookie;
-	@FindBy(xpath = "//a[@id='advertClose']")
-	private WebElement closeAdvertisement;
-	@FindBy(xpath = "//a/span[@class='fantasySignInLabel']")
-	private WebElement signIn;
+	By acceptCookie = By.xpath("//div[contains(@class,'cookies')]");
+	By closeAdvertisement = By.xpath("//a[@id='advertClose']");
+	By signIn = By.xpath("//a/span[@class='fantasySignInLabel']");
+	
 
 	public WebElement toAcceptCookie() {
 
-		return acceptCookie;
+		return getElement(acceptCookie);
 	}
 
 	public void toCloseAdvertisement() {
 
-		if(closeAdvertisement.isDisplayed()) {
-			
-			closeAdvertisement.click();
+		if(getElement(closeAdvertisement).isDisplayed()) {
+			getElement(closeAdvertisement).click();
 		}
 	}
 
 	public LoginPage toGetLoginPage() {
 
-		signIn.click();
-		//LoginPage loginPage = new LoginPage(driver);
-
-		return new LoginPage(driver);
+		getElement(signIn).click();
+		return getInstances(LoginPage.class);
 	}
 	
 

@@ -1,42 +1,47 @@
 package webpages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage {
+public class LoginPage extends Pages {
 
 	WebDriver driver;
 
 	public LoginPage(WebDriver driver) {
 
+		super(driver);
 		this.driver = driver;
-		PageFactory.initElements(driver, this);
-
 	}
 
-	@FindBy(xpath = "//input[@type='email']")
-	private WebElement emailID;
-	@FindBy(xpath = "//input[@type='password']")
-	private WebElement password;
-	@FindBy(xpath = "//button[@type='submit']")
-	private WebElement signInButton;
+	By emailTextBox = By.xpath("//input[@type='email']");
+	By passwordTextBox = By.xpath("//input[@type='password']");
+	By signInButton = By.xpath("//button[@type='submit']");
 
 	public WebElement toEnterEmail() {
 
-		return emailID;
+		return getElement(emailTextBox);
 	}
 
 	public WebElement toEnterPassword() {
 
-		return password;
+		return getElement(passwordTextBox);
 	}
 
 	public HomePage toSignIn() {
 
-		signInButton.click();
-		return new HomePage(driver);
+		getElement(signInButton).click();
+		return getInstances(HomePage.class);
+	}
+
+	public HomePage doLogin(String username, String password) {
+
+		toEnterEmail().sendKeys(username);
+		toEnterPassword().sendKeys(password);
+		return toSignIn();
+
 	}
 
 }

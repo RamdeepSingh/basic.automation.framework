@@ -1,41 +1,38 @@
 package webpages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class HomePage {
+public class HomePage extends Pages {
 
 	WebDriver driver;
 
 	public HomePage(WebDriver driver) {
 
+		super(driver);
 		this.driver = driver;
-		PageFactory.initElements(driver, this);
-
 	}
 
-	@FindBy(xpath = "//span[@class='fantasyUsername']")
-	private WebElement userInfo;
-	@FindBy(xpath = "//a[contains(@class,'racism')]")
-	private WebElement noRacismMessage;
-	@FindBy(xpath = "//span[@class='fantasyUsername']")
-	private WebElement fantasyUsername;
+	By userInfo = By.xpath("//span[@class='fantasyUsername']");
+	By noRacismMessage = By.xpath("//a[contains(@class,'racism')]");
+	By fantasyUsername = By.xpath("//span[@class='fantasyUsername']");
 
 	public WebElement toGetUserInfo() {
 
-		return userInfo;
+		return getElement(userInfo);
 	}
 
 	public WebElement noRacismTitle() {
 
-		return noRacismMessage;
+		return getElement(noRacismMessage);
 	}
 
 	public WebElement toFetchFantasyUsername() {
 
-		return fantasyUsername;
+		return getElement(fantasyUsername);
 	}
 
 }
